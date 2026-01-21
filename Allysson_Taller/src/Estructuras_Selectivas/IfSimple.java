@@ -14,7 +14,8 @@ public class IfSimple {
 
         // PROCESO (IF SIMPLE)
         if (edad >= 18) {
-            System.out.println("ACCESO PERMITIDO25");
+            System.out.println("ACCESO PERMITIDO");
             // TODO: mostrar mensaje de confirmación
-        }
+        } 
+    }    
 }

@@ -9,9 +9,13 @@ Pida al ingresar usuario una contraseña hasta que sea correcta.
 public class While {
     public static void main(String[] args) {
         Scanner tcl = new Scanner(System.in);
-         String contraseña="UTPL";
-        while(contraseña.equalsIgnoreCase("UTPL"))
+         String contraseña=" ";
+         int intentos=0;
+        while(!contraseña.equalsIgnoreCase("UTPL")){
             System.out.print("Ingrese una contraseña:");
             contraseña=tcl.next();
+            intentos++;
+        }
+        System.out.println("ACCESO PERMITIDO EN "  +intentos+  "INTENTOS");
     }
 }
